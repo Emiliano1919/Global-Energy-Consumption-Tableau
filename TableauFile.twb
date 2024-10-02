@@ -1,0 +1,1802 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0910.0334                               -->
+<workbook original-version='18.1' source-build='2024.2.3 (20242.24.0910.0334)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='TableauFile_17278900153290' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='global-energy-substitution - 5.5' inline='true' name='federated.1k60sfe1l8kq7716bxj3107kd1ye' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='global-energy-substitution - 5.5' name='textscan.1saz9090v00lnp1bmihwg0438gk6'>
+            <connection class='textscan' directory='/Users/emilianojimenezguadarrama/repos/Global-Energy-Consumption-Tableau' filename='global-energy-substitution - 5.5.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1saz9090v00lnp1bmihwg0438gk6' name='global-energy-substitution - 5.5.csv' table='[global-energy-substitution - 5.5#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Entity' ordinal='0' />
+            <column datatype='string' name='Code' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='real' name='Other renewables (TWh, substituted energy)' ordinal='3' />
+            <column datatype='real' name='Biofuels (TWh, substituted energy)' ordinal='4' />
+            <column datatype='real' name='Solar (TWh, substituted energy)' ordinal='5' />
+            <column datatype='real' name='Wind (TWh, substituted energy)' ordinal='6' />
+            <column datatype='real' name='Hydropower (TWh, substituted energy)' ordinal='7' />
+            <column datatype='real' name='Nuclear (TWh, substituted energy)' ordinal='8' />
+            <column datatype='real' name='Gas (TWh, substituted energy)' ordinal='9' />
+            <column datatype='real' name='Oil (TWh, substituted energy)' ordinal='10' />
+            <column datatype='real' name='Coal (TWh, substituted energy)' ordinal='11' />
+            <column datatype='integer' name='Traditional biomass (TWh, substituted energy)' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1saz9090v00lnp1bmihwg0438gk6' name='global-energy-substitution - 5.5.csv' table='[global-energy-substitution - 5.5#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Entity' ordinal='0' />
+            <column datatype='string' name='Code' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='real' name='Other renewables (TWh, substituted energy)' ordinal='3' />
+            <column datatype='real' name='Biofuels (TWh, substituted energy)' ordinal='4' />
+            <column datatype='real' name='Solar (TWh, substituted energy)' ordinal='5' />
+            <column datatype='real' name='Wind (TWh, substituted energy)' ordinal='6' />
+            <column datatype='real' name='Hydropower (TWh, substituted energy)' ordinal='7' />
+            <column datatype='real' name='Nuclear (TWh, substituted energy)' ordinal='8' />
+            <column datatype='real' name='Gas (TWh, substituted energy)' ordinal='9' />
+            <column datatype='real' name='Oil (TWh, substituted energy)' ordinal='10' />
+            <column datatype='real' name='Coal (TWh, substituted energy)' ordinal='11' />
+            <column datatype='integer' name='Traditional biomass (TWh, substituted energy)' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Entity]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Entity</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Code]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other renewables (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other renewables (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Other renewables (TWh, substituted energy)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Biofuels (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Biofuels (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Biofuels (TWh, substituted energy)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Solar (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Solar (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Solar (TWh, substituted energy)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wind (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Wind (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Wind (TWh, substituted energy)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hydropower (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hydropower (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Hydropower (TWh, substituted energy)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nuclear (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Nuclear (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Nuclear (TWh, substituted energy)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gas (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gas (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Gas (TWh, substituted energy)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Oil (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Oil (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Oil (TWh, substituted energy)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Coal (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Coal (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Coal (TWh, substituted energy)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Traditional biomass (TWh, substituted energy)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Traditional biomass (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Traditional biomass (TWh, substituted energy)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='global-energy-substitution - 5.5.csv' datatype='table' name='[__tableau_internal_object_id__].[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/j3/0t9gz0951gd4l3mlmpzxgwxh0000gn/T/tableau-temp/#TableauTemp_181lb5211ak2ul12042xu1x32s6r.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/02/2024 04:49:59 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Entity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Entity</remote-alias>
+              <ordinal>0</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other renewables (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Other renewables (TWh, substituted energy)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other renewables (TWh, substituted energy)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Biofuels (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Biofuels (TWh, substituted energy)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Biofuels (TWh, substituted energy)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Solar (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Solar (TWh, substituted energy)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Solar (TWh, substituted energy)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Wind (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Wind (TWh, substituted energy)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Wind (TWh, substituted energy)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hydropower (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Hydropower (TWh, substituted energy)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hydropower (TWh, substituted energy)</remote-alias>
+              <ordinal>7</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nuclear (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Nuclear (TWh, substituted energy)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nuclear (TWh, substituted energy)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gas (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Gas (TWh, substituted energy)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gas (TWh, substituted energy)</remote-alias>
+              <ordinal>9</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Oil (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Oil (TWh, substituted energy)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Oil (TWh, substituted energy)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Coal (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Coal (TWh, substituted energy)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Coal (TWh, substituted energy)</remote-alias>
+              <ordinal>11</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Traditional biomass (TWh, substituted energy)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Traditional biomass (TWh, substituted energy)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Traditional biomass (TWh, substituted energy)</remote-alias>
+              <ordinal>12</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>58</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='global-energy-substitution - 5.5.csv' id='global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F'>
+            <properties context=''>
+              <relation connection='textscan.1saz9090v00lnp1bmihwg0438gk6' name='global-energy-substitution - 5.5.csv' table='[global-energy-substitution - 5.5#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Entity' ordinal='0' />
+                  <column datatype='string' name='Code' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='real' name='Other renewables (TWh, substituted energy)' ordinal='3' />
+                  <column datatype='real' name='Biofuels (TWh, substituted energy)' ordinal='4' />
+                  <column datatype='real' name='Solar (TWh, substituted energy)' ordinal='5' />
+                  <column datatype='real' name='Wind (TWh, substituted energy)' ordinal='6' />
+                  <column datatype='real' name='Hydropower (TWh, substituted energy)' ordinal='7' />
+                  <column datatype='real' name='Nuclear (TWh, substituted energy)' ordinal='8' />
+                  <column datatype='real' name='Gas (TWh, substituted energy)' ordinal='9' />
+                  <column datatype='real' name='Oil (TWh, substituted energy)' ordinal='10' />
+                  <column datatype='real' name='Coal (TWh, substituted energy)' ordinal='11' />
+                  <column datatype='integer' name='Traditional biomass (TWh, substituted energy)' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='global-energy-substitution - 5.5 (copy)' inline='true' name='federated.1k60sfe1l8kq7716bxj3107kd1ye (copy)' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='global-energy-substitution - 5.5' name='textscan.1saz9090v00lnp1bmihwg0438gk6 (copy)'>
+            <connection class='textscan' directory='/Users/emilianojimenezguadarrama/repos/Global-Energy-Consumption-Tableau' filename='global-energy-substitution - 5.5.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Biofuels (TWh, substituted energy)]' />
+            <value name='[Coal (TWh, substituted energy)]' />
+            <value name='[Gas (TWh, substituted energy)]' />
+            <value name='[Hydropower (TWh, substituted energy)]' />
+            <value name='[Nuclear (TWh, substituted energy)]' />
+            <value name='[Oil (TWh, substituted energy)]' />
+            <value name='[Other renewables (TWh, substituted energy)]' />
+            <value name='[Solar (TWh, substituted energy)]' />
+            <value name='[Traditional biomass (TWh, substituted energy)]' />
+            <value name='[Wind (TWh, substituted energy)]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[global-energy-substitution - 5.5.csv].[Biofuels (TWh, substituted energy)]' />
+              <field name='[global-energy-substitution - 5.5.csv].[Coal (TWh, substituted energy)]' />
+              <field name='[global-energy-substitution - 5.5.csv].[Gas (TWh, substituted energy)]' />
+              <field name='[global-energy-substitution - 5.5.csv].[Hydropower (TWh, substituted energy)]' />
+              <field name='[global-energy-substitution - 5.5.csv].[Nuclear (TWh, substituted energy)]' />
+              <field name='[global-energy-substitution - 5.5.csv].[Oil (TWh, substituted energy)]' />
+              <field name='[global-energy-substitution - 5.5.csv].[Other renewables (TWh, substituted energy)]' />
+              <field name='[global-energy-substitution - 5.5.csv].[Solar (TWh, substituted energy)]' />
+              <field name='[global-energy-substitution - 5.5.csv].[Traditional biomass (TWh, substituted energy)]' />
+              <field name='[global-energy-substitution - 5.5.csv].[Wind (TWh, substituted energy)]' />
+            </group>
+          </groups>
+          <relation connection='textscan.1saz9090v00lnp1bmihwg0438gk6 (copy)' name='global-energy-substitution - 5.5.csv' table='[global-energy-substitution - 5.5#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Entity' ordinal='0' />
+              <column datatype='string' name='Code' ordinal='1' />
+              <column datatype='integer' name='Year' ordinal='2' />
+              <column datatype='real' name='Other renewables (TWh, substituted energy)' ordinal='3' />
+              <column datatype='real' name='Biofuels (TWh, substituted energy)' ordinal='4' />
+              <column datatype='real' name='Solar (TWh, substituted energy)' ordinal='5' />
+              <column datatype='real' name='Wind (TWh, substituted energy)' ordinal='6' />
+              <column datatype='real' name='Hydropower (TWh, substituted energy)' ordinal='7' />
+              <column datatype='real' name='Nuclear (TWh, substituted energy)' ordinal='8' />
+              <column datatype='real' name='Gas (TWh, substituted energy)' ordinal='9' />
+              <column datatype='real' name='Oil (TWh, substituted energy)' ordinal='10' />
+              <column datatype='real' name='Coal (TWh, substituted energy)' ordinal='11' />
+              <column datatype='integer' name='Traditional biomass (TWh, substituted energy)' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation name='Pivot' type='pivot'>
+            <columns>
+              <column datatype='string' name='Pivot Field Names' />
+              <column datatype='real' name='Pivot Field Values' />
+            </columns>
+            <tag name='Pivot Field Names'>
+              <value name='[Biofuels (TWh, substituted energy)]' />
+              <value name='[Coal (TWh, substituted energy)]' />
+              <value name='[Gas (TWh, substituted energy)]' />
+              <value name='[Hydropower (TWh, substituted energy)]' />
+              <value name='[Nuclear (TWh, substituted energy)]' />
+              <value name='[Oil (TWh, substituted energy)]' />
+              <value name='[Other renewables (TWh, substituted energy)]' />
+              <value name='[Solar (TWh, substituted energy)]' />
+              <value name='[Traditional biomass (TWh, substituted energy)]' />
+              <value name='[Wind (TWh, substituted energy)]' />
+            </tag>
+            <groups>
+              <group name='Pivot Field Values'>
+                <field name='[global-energy-substitution - 5.5.csv].[Biofuels (TWh, substituted energy)]' />
+                <field name='[global-energy-substitution - 5.5.csv].[Coal (TWh, substituted energy)]' />
+                <field name='[global-energy-substitution - 5.5.csv].[Gas (TWh, substituted energy)]' />
+                <field name='[global-energy-substitution - 5.5.csv].[Hydropower (TWh, substituted energy)]' />
+                <field name='[global-energy-substitution - 5.5.csv].[Nuclear (TWh, substituted energy)]' />
+                <field name='[global-energy-substitution - 5.5.csv].[Oil (TWh, substituted energy)]' />
+                <field name='[global-energy-substitution - 5.5.csv].[Other renewables (TWh, substituted energy)]' />
+                <field name='[global-energy-substitution - 5.5.csv].[Solar (TWh, substituted energy)]' />
+                <field name='[global-energy-substitution - 5.5.csv].[Traditional biomass (TWh, substituted energy)]' />
+                <field name='[global-energy-substitution - 5.5.csv].[Wind (TWh, substituted energy)]' />
+              </group>
+            </groups>
+            <relation connection='textscan.1saz9090v00lnp1bmihwg0438gk6 (copy)' name='global-energy-substitution - 5.5.csv' table='[global-energy-substitution - 5.5#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                <column datatype='string' name='Entity' ordinal='0' />
+                <column datatype='string' name='Code' ordinal='1' />
+                <column datatype='integer' name='Year' ordinal='2' />
+                <column datatype='real' name='Other renewables (TWh, substituted energy)' ordinal='3' />
+                <column datatype='real' name='Biofuels (TWh, substituted energy)' ordinal='4' />
+                <column datatype='real' name='Solar (TWh, substituted energy)' ordinal='5' />
+                <column datatype='real' name='Wind (TWh, substituted energy)' ordinal='6' />
+                <column datatype='real' name='Hydropower (TWh, substituted energy)' ordinal='7' />
+                <column datatype='real' name='Nuclear (TWh, substituted energy)' ordinal='8' />
+                <column datatype='real' name='Gas (TWh, substituted energy)' ordinal='9' />
+                <column datatype='real' name='Oil (TWh, substituted energy)' ordinal='10' />
+                <column datatype='real' name='Coal (TWh, substituted energy)' ordinal='11' />
+                <column datatype='integer' name='Traditional biomass (TWh, substituted energy)' ordinal='12' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.1saz9090v00lnp1bmihwg0438gk6 (copy)' name='global-energy-substitution - 5.5.csv1' table='[global-energy-substitution - 5.5#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Entity' ordinal='0' />
+              <column datatype='string' name='Code' ordinal='1' />
+              <column datatype='integer' name='Year' ordinal='2' />
+              <column datatype='real' name='Other renewables (TWh, substituted energy)' ordinal='3' />
+              <column datatype='real' name='Biofuels (TWh, substituted energy)' ordinal='4' />
+              <column datatype='real' name='Solar (TWh, substituted energy)' ordinal='5' />
+              <column datatype='real' name='Wind (TWh, substituted energy)' ordinal='6' />
+              <column datatype='real' name='Hydropower (TWh, substituted energy)' ordinal='7' />
+              <column datatype='real' name='Nuclear (TWh, substituted energy)' ordinal='8' />
+              <column datatype='real' name='Gas (TWh, substituted energy)' ordinal='9' />
+              <column datatype='real' name='Oil (TWh, substituted energy)' ordinal='10' />
+              <column datatype='real' name='Coal (TWh, substituted energy)' ordinal='11' />
+              <column datatype='integer' name='Traditional biomass (TWh, substituted energy)' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Biofuels (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv1].[Biofuels (TWh, substituted energy)]' />
+          <map key='[Coal (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv1].[Coal (TWh, substituted energy)]' />
+          <map key='[Code (global-energy-substitution - 5.5.csv1)]' value='[global-energy-substitution - 5.5.csv1].[Code]' />
+          <map key='[Code]' value='[global-energy-substitution - 5.5.csv].[Code]' />
+          <map key='[Entity (global-energy-substitution - 5.5.csv1)]' value='[global-energy-substitution - 5.5.csv1].[Entity]' />
+          <map key='[Entity]' value='[global-energy-substitution - 5.5.csv].[Entity]' />
+          <map key='[Gas (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv1].[Gas (TWh, substituted energy)]' />
+          <map key='[Hydropower (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv1].[Hydropower (TWh, substituted energy)]' />
+          <map key='[Nuclear (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv1].[Nuclear (TWh, substituted energy)]' />
+          <map key='[Oil (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv1].[Oil (TWh, substituted energy)]' />
+          <map key='[Other renewables (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv1].[Other renewables (TWh, substituted energy)]' />
+          <map key='[Pivot Field Names]' value='[Pivot].[Pivot Field Names]' />
+          <map key='[Pivot Field Values]' value='[Pivot].[Pivot Field Values]' />
+          <map key='[Solar (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv1].[Solar (TWh, substituted energy)]' />
+          <map key='[Traditional biomass (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv1].[Traditional biomass (TWh, substituted energy)]' />
+          <map key='[Wind (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv1].[Wind (TWh, substituted energy)]' />
+          <map key='[Year (global-energy-substitution - 5.5.csv1)]' value='[global-energy-substitution - 5.5.csv1].[Year]' />
+          <map key='[Year]' value='[global-energy-substitution - 5.5.csv].[Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[global-energy-substitution - 5.5.csv1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Entity]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Entity</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Code]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Entity (global-energy-substitution - 5.5.csv1)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv1]</parent-name>
+            <remote-alias>Entity</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Code (global-energy-substitution - 5.5.csv1)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv1]</parent-name>
+            <remote-alias>Code</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (global-energy-substitution - 5.5.csv1)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other renewables (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other renewables (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv1]</parent-name>
+            <remote-alias>Other renewables (TWh, substituted energy)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Biofuels (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Biofuels (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv1]</parent-name>
+            <remote-alias>Biofuels (TWh, substituted energy)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Solar (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Solar (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv1]</parent-name>
+            <remote-alias>Solar (TWh, substituted energy)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wind (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Wind (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv1]</parent-name>
+            <remote-alias>Wind (TWh, substituted energy)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hydropower (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hydropower (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv1]</parent-name>
+            <remote-alias>Hydropower (TWh, substituted energy)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nuclear (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Nuclear (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv1]</parent-name>
+            <remote-alias>Nuclear (TWh, substituted energy)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gas (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gas (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv1]</parent-name>
+            <remote-alias>Gas (TWh, substituted energy)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Oil (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Oil (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv1]</parent-name>
+            <remote-alias>Oil (TWh, substituted energy)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Coal (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Coal (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv1]</parent-name>
+            <remote-alias>Coal (TWh, substituted energy)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Traditional biomass (TWh, substituted energy)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Traditional biomass (TWh, substituted energy)]</local-name>
+            <parent-name>[global-energy-substitution - 5.5.csv1]</parent-name>
+            <remote-alias>Traditional biomass (TWh, substituted energy)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' hidden='true' name='[Code (global-energy-substitution - 5.5.csv1)]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Code]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Entity (global-energy-substitution - 5.5.csv1)]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Entity]' role='dimension' type='nominal' />
+      <column caption='Energy Source' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Biofuels (TWh, substituted energy)&quot;' value='Biofuels' />
+          <alias key='&quot;Coal (TWh, substituted energy)&quot;' value='Coal' />
+          <alias key='&quot;Gas (TWh, substituted energy)&quot;' value='Gas' />
+          <alias key='&quot;Hydropower (TWh, substituted energy)&quot;' value='Hydropower' />
+          <alias key='&quot;Nuclear (TWh, substituted energy)&quot;' value='Nuclear ' />
+          <alias key='&quot;Oil (TWh, substituted energy)&quot;' value='Oil ' />
+          <alias key='&quot;Other renewables (TWh, substituted energy)&quot;' value='Other renewables' />
+          <alias key='&quot;Solar (TWh, substituted energy)&quot;' value='Solar' />
+          <alias key='&quot;Traditional biomass (TWh, substituted energy)&quot;' value='Traditional biomass ' />
+          <alias key='&quot;Wind (TWh, substituted energy)&quot;' value='Wind ' />
+        </aliases>
+      </column>
+      <column caption='Energy Consumption' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year (global-energy-substitution - 5.5.csv1)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='global-energy-substitution - 5.5.csv' datatype='table' name='[__tableau_internal_object_id__].[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='global-energy-substitution - 5.5.csv1' datatype='table' name='[__tableau_internal_object_id__].[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/j3/0t9gz0951gd4l3mlmpzxgwxh0000gn/T/tableau-temp/#TableauTemp_0c2hnsi162tnr91fpcsvh114wqna.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/02/2024 05:06:01 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F' table='[Extract].[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F' table='[Extract].[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]' type='table' />
+            <relation name='global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2' table='[Extract].[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[Biofuels (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2].[Biofuels (TWh, substituted energy)]' />
+            <map key='[Coal (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2].[Coal (TWh, substituted energy)]' />
+            <map key='[Code (global-energy-substitution - 5.5.csv1)]' value='[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2].[Code]' />
+            <map key='[Code]' value='[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F].[Code]' />
+            <map key='[Entity (global-energy-substitution - 5.5.csv1)]' value='[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2].[Entity]' />
+            <map key='[Entity]' value='[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F].[Entity]' />
+            <map key='[Gas (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2].[Gas (TWh, substituted energy)]' />
+            <map key='[Hydropower (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2].[Hydropower (TWh, substituted energy)]' />
+            <map key='[Nuclear (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2].[Nuclear (TWh, substituted energy)]' />
+            <map key='[Oil (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2].[Oil (TWh, substituted energy)]' />
+            <map key='[Other renewables (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2].[Other renewables (TWh, substituted energy)]' />
+            <map key='[Pivot Field Names]' value='[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F].[Pivot Field Names]' />
+            <map key='[Pivot Field Values]' value='[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F].[Pivot Field Values]' />
+            <map key='[Solar (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2].[Solar (TWh, substituted energy)]' />
+            <map key='[Traditional biomass (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2].[Traditional biomass (TWh, substituted energy)]' />
+            <map key='[Wind (TWh, substituted energy)]' value='[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2].[Wind (TWh, substituted energy)]' />
+            <map key='[Year (global-energy-substitution - 5.5.csv1)]' value='[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2].[Year]' />
+            <map key='[Year]' value='[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F].[Year]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Entity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entity]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</parent-name>
+              <remote-alias>Entity</remote-alias>
+              <ordinal>0</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Code]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</parent-name>
+              <remote-alias>Code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>global-energy-substitution - 5.5.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Pivot</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>590</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Entity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entity (global-energy-substitution - 5.5.csv1)]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</parent-name>
+              <remote-alias>Entity</remote-alias>
+              <ordinal>5</ordinal>
+              <family>global-energy-substitution - 5.5.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Code (global-energy-substitution - 5.5.csv1)]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</parent-name>
+              <remote-alias>Code</remote-alias>
+              <ordinal>6</ordinal>
+              <family>global-energy-substitution - 5.5.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year (global-energy-substitution - 5.5.csv1)]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>7</ordinal>
+              <family>global-energy-substitution - 5.5.csv1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other renewables (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Other renewables (TWh, substituted energy)]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</parent-name>
+              <remote-alias>Other renewables (TWh, substituted energy)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>global-energy-substitution - 5.5.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Biofuels (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Biofuels (TWh, substituted energy)]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</parent-name>
+              <remote-alias>Biofuels (TWh, substituted energy)</remote-alias>
+              <ordinal>9</ordinal>
+              <family>global-energy-substitution - 5.5.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Solar (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Solar (TWh, substituted energy)]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</parent-name>
+              <remote-alias>Solar (TWh, substituted energy)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>global-energy-substitution - 5.5.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Wind (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Wind (TWh, substituted energy)]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</parent-name>
+              <remote-alias>Wind (TWh, substituted energy)</remote-alias>
+              <ordinal>11</ordinal>
+              <family>global-energy-substitution - 5.5.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hydropower (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Hydropower (TWh, substituted energy)]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</parent-name>
+              <remote-alias>Hydropower (TWh, substituted energy)</remote-alias>
+              <ordinal>12</ordinal>
+              <family>global-energy-substitution - 5.5.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nuclear (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Nuclear (TWh, substituted energy)]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</parent-name>
+              <remote-alias>Nuclear (TWh, substituted energy)</remote-alias>
+              <ordinal>13</ordinal>
+              <family>global-energy-substitution - 5.5.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gas (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Gas (TWh, substituted energy)]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</parent-name>
+              <remote-alias>Gas (TWh, substituted energy)</remote-alias>
+              <ordinal>14</ordinal>
+              <family>global-energy-substitution - 5.5.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Oil (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Oil (TWh, substituted energy)]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</parent-name>
+              <remote-alias>Oil (TWh, substituted energy)</remote-alias>
+              <ordinal>15</ordinal>
+              <family>global-energy-substitution - 5.5.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Coal (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Coal (TWh, substituted energy)]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</parent-name>
+              <remote-alias>Coal (TWh, substituted energy)</remote-alias>
+              <ordinal>16</ordinal>
+              <family>global-energy-substitution - 5.5.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Traditional biomass (TWh, substituted energy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Traditional biomass (TWh, substituted energy)]</local-name>
+              <parent-name>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</parent-name>
+              <remote-alias>Traditional biomass (TWh, substituted energy)</remote-alias>
+              <ordinal>17</ordinal>
+              <family>global-energy-substitution - 5.5.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>58</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='global-energy-substitution - 5.5.csv' id='global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='real' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Biofuels (TWh, substituted energy)]' />
+                  <value name='[Coal (TWh, substituted energy)]' />
+                  <value name='[Gas (TWh, substituted energy)]' />
+                  <value name='[Hydropower (TWh, substituted energy)]' />
+                  <value name='[Nuclear (TWh, substituted energy)]' />
+                  <value name='[Oil (TWh, substituted energy)]' />
+                  <value name='[Other renewables (TWh, substituted energy)]' />
+                  <value name='[Solar (TWh, substituted energy)]' />
+                  <value name='[Traditional biomass (TWh, substituted energy)]' />
+                  <value name='[Wind (TWh, substituted energy)]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[global-energy-substitution - 5.5.csv].[Biofuels (TWh, substituted energy)]' />
+                    <field name='[global-energy-substitution - 5.5.csv].[Coal (TWh, substituted energy)]' />
+                    <field name='[global-energy-substitution - 5.5.csv].[Gas (TWh, substituted energy)]' />
+                    <field name='[global-energy-substitution - 5.5.csv].[Hydropower (TWh, substituted energy)]' />
+                    <field name='[global-energy-substitution - 5.5.csv].[Nuclear (TWh, substituted energy)]' />
+                    <field name='[global-energy-substitution - 5.5.csv].[Oil (TWh, substituted energy)]' />
+                    <field name='[global-energy-substitution - 5.5.csv].[Other renewables (TWh, substituted energy)]' />
+                    <field name='[global-energy-substitution - 5.5.csv].[Solar (TWh, substituted energy)]' />
+                    <field name='[global-energy-substitution - 5.5.csv].[Traditional biomass (TWh, substituted energy)]' />
+                    <field name='[global-energy-substitution - 5.5.csv].[Wind (TWh, substituted energy)]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.1saz9090v00lnp1bmihwg0438gk6 (copy)' name='global-energy-substitution - 5.5.csv' table='[global-energy-substitution - 5.5#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='Entity' ordinal='0' />
+                    <column datatype='string' name='Code' ordinal='1' />
+                    <column datatype='integer' name='Year' ordinal='2' />
+                    <column datatype='real' name='Other renewables (TWh, substituted energy)' ordinal='3' />
+                    <column datatype='real' name='Biofuels (TWh, substituted energy)' ordinal='4' />
+                    <column datatype='real' name='Solar (TWh, substituted energy)' ordinal='5' />
+                    <column datatype='real' name='Wind (TWh, substituted energy)' ordinal='6' />
+                    <column datatype='real' name='Hydropower (TWh, substituted energy)' ordinal='7' />
+                    <column datatype='real' name='Nuclear (TWh, substituted energy)' ordinal='8' />
+                    <column datatype='real' name='Gas (TWh, substituted energy)' ordinal='9' />
+                    <column datatype='real' name='Oil (TWh, substituted energy)' ordinal='10' />
+                    <column datatype='real' name='Coal (TWh, substituted energy)' ordinal='11' />
+                    <column datatype='integer' name='Traditional biomass (TWh, substituted energy)' ordinal='12' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F' table='[Extract].[global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F]' type='table' />
+            </properties>
+          </object>
+          <object caption='global-energy-substitution - 5.5.csv1' id='global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2'>
+            <properties context=''>
+              <relation connection='textscan.1saz9090v00lnp1bmihwg0438gk6 (copy)' name='global-energy-substitution - 5.5.csv1' table='[global-energy-substitution - 5.5#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Entity' ordinal='0' />
+                  <column datatype='string' name='Code' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='real' name='Other renewables (TWh, substituted energy)' ordinal='3' />
+                  <column datatype='real' name='Biofuels (TWh, substituted energy)' ordinal='4' />
+                  <column datatype='real' name='Solar (TWh, substituted energy)' ordinal='5' />
+                  <column datatype='real' name='Wind (TWh, substituted energy)' ordinal='6' />
+                  <column datatype='real' name='Hydropower (TWh, substituted energy)' ordinal='7' />
+                  <column datatype='real' name='Nuclear (TWh, substituted energy)' ordinal='8' />
+                  <column datatype='real' name='Gas (TWh, substituted energy)' ordinal='9' />
+                  <column datatype='real' name='Oil (TWh, substituted energy)' ordinal='10' />
+                  <column datatype='real' name='Coal (TWh, substituted energy)' ordinal='11' />
+                  <column datatype='integer' name='Traditional biomass (TWh, substituted energy)' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2' table='[Extract].[global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[Code]' />
+                <expression op='[Code (global-energy-substitution - 5.5.csv1)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Entity]' />
+                <expression op='[Entity (global-energy-substitution - 5.5.csv1)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Year]' />
+                <expression op='[Year (global-energy-substitution - 5.5.csv1)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='global-energy-substitution - 5.5.csv_0D7FE2FB4F3742719BDA440500F0C42F' />
+            <second-end-point object-id='global-energy-substitution - 5.5.csv_A087BF97269046D5AEDED881268C7BC2' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Global Energy Consumption</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global-energy-substitution - 5.5 (copy)' name='federated.1k60sfe1l8kq7716bxj3107kd1ye (copy)' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1k60sfe1l8kq7716bxj3107kd1ye (copy)'>
+            <column caption='Energy Source' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Biofuels (TWh, substituted energy)&quot;' value='Biofuels' />
+                <alias key='&quot;Coal (TWh, substituted energy)&quot;' value='Coal' />
+                <alias key='&quot;Gas (TWh, substituted energy)&quot;' value='Gas' />
+                <alias key='&quot;Hydropower (TWh, substituted energy)&quot;' value='Hydropower' />
+                <alias key='&quot;Nuclear (TWh, substituted energy)&quot;' value='Nuclear ' />
+                <alias key='&quot;Oil (TWh, substituted energy)&quot;' value='Oil ' />
+                <alias key='&quot;Other renewables (TWh, substituted energy)&quot;' value='Other renewables' />
+                <alias key='&quot;Solar (TWh, substituted energy)&quot;' value='Solar' />
+                <alias key='&quot;Traditional biomass (TWh, substituted energy)&quot;' value='Traditional biomass ' />
+                <alias key='&quot;Wind (TWh, substituted energy)&quot;' value='Wind ' />
+              </aliases>
+            </column>
+            <column caption='Energy Consumption' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1k60sfe1l8kq7716bxj3107kd1ye (copy)].[sum:Pivot Field Values:qk]' scope='rows' value='Energy Consumption in TWh' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.1k60sfe1l8kq7716bxj3107kd1ye (copy)].[none:Pivot Field Names:nk]' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1k60sfe1l8kq7716bxj3107kd1ye (copy)].[none:Pivot Field Names:nk]' value='Energy Source'>
+              <formatted-text>
+                <run>Energy Source</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1k60sfe1l8kq7716bxj3107kd1ye (copy)].[none:Pivot Field Names:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1k60sfe1l8kq7716bxj3107kd1ye (copy)].[sum:Pivot Field Values:qk]</rows>
+        <cols>[federated.1k60sfe1l8kq7716bxj3107kd1ye (copy)].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{D1DE9543-9D06-4B5E-B359-B13697F8D3A3}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3EE1CB81-AF60-483B-9901-5F830E5ACA5E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1k60sfe1l8kq7716bxj3107kd1ye (copy)].[none:Pivot Field Names:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1k60sfe1l8kq7716bxj3107kd1ye (copy)].[none:Code:nk]</field>
+            <field>[federated.1k60sfe1l8kq7716bxj3107kd1ye (copy)].[none:Pivot Field Names:nk]</field>
+            <field>[federated.1k60sfe1l8kq7716bxj3107kd1ye (copy)].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F4DAD5B4-3258-4C6C-B6D5-77FC8DFF010F}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{08D2974B-5799-4B0C-BD99-95E77C8F55C8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='384' name='Sheet 2' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
